@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <!-- HEAD_svelte-mv0rua_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://api.fontshare.com/v2/css?f[]=bespoke-serif@400,700,401,500,501,701&display=swap" rel="stylesheet">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        html {
+            /* Colors */
+            --color-accent: #95B4BE;
+            --font-primary: "Bespoke Serif", serif;
+            --font-secondary: system-ui, serif;
+
+            /* Default property values */
+            --background: white;
+            --color: #222;
+            --padding: 4rem 2rem;
+            --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 8px;
+            --max-width: 900px;
+            --border-color: #C6CCD2;
+            --transition-time: 0.1s;
+            --transition: var(--transition-time) color,
+                var(--transition-time) background-color,
+                var(--transition-time) border-color,
+                var(--transition-time) text-decoration-color,
+                var(--transition-time) box-shadow, var(--transtion-time) transform;
+        }
+
+        #page {
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: var(--background);
+        }
+
+        .section .content {
+            padding: var(--padding);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .section .content>* {
+            max-width: 700px;
+        }
+
+        .section .content img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        .section .content p {
+            padding: 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        .section .content a {}
+
+        .section .content h1 {
+            font-family: var(--font-primary);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section .content h2 {
+            font-family: var(--font-primary);
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+
+            /* &:after {
+      width: 50px;
+      border-bottom: 3px solid var(--color);
+      content: "";
+      display: block;
+      margin-bottom: 1.5rem;
+      margin-top: 0.5rem;
+    }*/
+        }
+
+        .section .content h3 {
+            font-family: var(--font-primary);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .section .content ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .section .content ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .section .content blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1200px);
+            margin: 0 auto;
+            padding: var(--padding);
+        }
+
+        .heading {
+            font-family: var(--font-primary);
+            font-size: 1.75rem;
+            line-height: 1;
+            font-weight: 500;
+
+            /*
+  &:after {
+    width: 50px;
+    border-bottom: 3px solid var(--color);
+    content: "";
+    display: block;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  */
+        }
+
+        .link {
+            border-bottom: 1.5px solid #4C4E52;
+            transition: 0.1s border-color;
+        }
+
+        .link:hover {
+            border-color: transparent;
+        }
+
+        .button {
+            color: white;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+    </style><!-- HEAD_svelte-mv0rua_END -->
+    <style>
+        .content.svelte-1nam8hy img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-1nam8hy p {
+            padding: 0.25rem 0;
+            line-height: 1.5
+        }
+
+        .content.svelte-1nam8hy a {
+            text-decoration: none
+        }
+
+        .content.svelte-1nam8hy h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 1rem
+        }
+
+        .content.svelte-1nam8hy h2 {
+            font-size: 2.25rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem
+        }
+
+        .content.svelte-1nam8hy h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem
+        }
+
+        .content.svelte-1nam8hy ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1nam8hy ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1nam8hy blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-5806e636-e581-4962-9621-0a91b9b15362">
+        <div class="component">
+            <div class="section">
+                <div class="section-container content svelte-1nam8hy"><!-- HTML_TAG_START -->
+                    <h1>Svelte</h1>
+                    <p>I started my <em>real </em>professional career building fancy websites for big universities. Not the kinds of designs that JS devs are used to (usually thrown together to get data from one place to another), but designs that are a part of the end product and value designy-presentation over functional-presentation. In that world, pixels matter, and approximations are rejected. More than that, it means that all of my time would be spent working with HTML and CSS, and when JS was introduced it would be to add specific interactivity. </p>
+                    <p>So when I started learning React, it was an upheaval of what I was used to, and more than that it introduced an incredible amount of complexity that I now had to learn, which took away time from building the thing I was supposed to be building. Given the option of building a web application with React vs HTML &amp; CSS, the answer if of course clear - considering you can't really build an application with just HTML and CSS. But once that road has been started on, additional technologies build on it, and suddenly we find ourselves building <em>normal </em>websites with React. Sites that don't have any interactivity at all are being built with this heavy JavaScript framework that was never intended for this type of product. The image that always comes to mind is of someone using a crane to build a house; it would be reasonably effective, sure, but it's not the tool you would come up with if you were designing a tool for the job. </p>
+                    <p>I say this as someone who has used React professionally, and was heading down the path of being a professional "React developer", happily eyeballing the increasingly high salaries that were waiting for me. I felt powerful learning Redux, not because I understood it or could be more effective with it, but because I could picture it on my resume. I could imagine myself suggesting we use Redux in our next dev meeting and become the "Redux guy". Again, I didn't really understand why it was necessary, or what problem it solved, but I knew that it was the hot thing everyone was talking about and I wanted to be a part of it. </p>
+                    <p>I don't have the authority or experience to say Redux is valuable or not - I'm sure it is - but I do have the authority to say what it was that drew me to it. It's a similar feeling to what drew me to cryptocurrency - money, status. I didn't understand it, or know how it was useful, but its promise of success so enticed me that I gave up my valuable resources to bet on it. </p>
+                    <p>An aside on cryptcurrency: Cryptocurrency has taken the world by storm, billions or trillions of dollars have been invested in it. There have been those who have made fortunes, and there have been those who have lost fortunes, but what there hasn't been is more value added. Cryptocurrency is a zero-sum game, where a dollar gained is a dollar lost. It's completely misunderstood by almost everyone who uses it, but a person doesn't have to understand it to participate anymore than an 80-something sitting at a slot machine has to understand what happens when they pull the lever. If the only reason cryptocurrency was invested in or marketed was because it was creating market value, it would be an esoteric technology at best. The fact that is isn't is a testament to the real reason it's famous: because it made a lot of people a lot of money. </p>
+                    <p>This was supposed to be an article touting the technical values of Svelte, but instead I can't help but write about how it showed me what to bet on in life. </p>
+                    <p></p><!-- HTML_TAG_END -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
