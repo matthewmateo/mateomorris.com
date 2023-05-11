@@ -1015,7 +1015,7 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			const head_nodes = head_selector('svelte-mv0rua', document.head);
+			const head_nodes = head_selector('svelte-1kgz8cf', document.head);
 			meta0 = claim_element(head_nodes, "META", { name: true, content: true });
 			meta1 = claim_element(head_nodes, "META", { charset: true });
 			link = claim_element(head_nodes, "LINK", { href: true, rel: true });
@@ -1032,6 +1032,7 @@ function create_fragment(ctx) {
 			attr(meta1, "charset", "UTF-8");
 			attr(link, "href", "https://api.fontshare.com/v2/css?f[]=bespoke-serif@400,700,401,500,501,701&display=swap");
 			attr(link, "rel", "stylesheet");
+			document.title = "Mateo Morris";
 		},
 		m(target, anchor) {
 			append_hydration(document.head, meta0);
