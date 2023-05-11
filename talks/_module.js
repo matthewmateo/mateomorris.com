@@ -4024,10 +4024,16 @@ function create_fragment$7(ctx) {
 				site_nav: [
 					{ "link": { "url": "/", "label": "Home" } },
 					{
-						"link": { "url": "/resume", "label": "Resume" }
+						"link": {
+							"url": "https://primosites.vercel.app/resume",
+							"label": "Resume"
+						}
 					},
 					{
-						"link": { "url": "/talks", "label": "Talks" }
+						"link": {
+							"url": "https://primosites.vercel.app/talks",
+							"label": "Talks"
+						}
 					}
 				]
 			}
