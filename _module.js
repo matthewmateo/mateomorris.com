@@ -3104,20 +3104,20 @@ class Component$1 extends SvelteComponent {
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[6] = list[i].link;
+	child_ctx[5] = list[i].link;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[6] = list[i].link;
+	child_ctx[5] = list[i].link;
 	return child_ctx;
 }
 
-// (114:6) {#each site_nav as { link }}
+// (113:6) {#each site_nav as { link }}
 function create_each_block_1(ctx) {
 	let a;
-	let t_value = /*link*/ ctx[6].label + "";
+	let t_value = /*link*/ ctx[5].label + "";
 	let t;
 	let a_href_value;
 
@@ -3136,22 +3136,22 @@ function create_each_block_1(ctx) {
 		},
 		h() {
 			attr(a, "class", "link svelte-exauqk");
-			attr(a, "href", a_href_value = /*link*/ ctx[6].url);
-			toggle_class(a, "active", /*link*/ ctx[6].url === window.location.pathname);
+			attr(a, "href", a_href_value = /*link*/ ctx[5].url);
+			toggle_class(a, "active", /*link*/ ctx[5].url === window.location.pathname);
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
 			append_hydration(a, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*site_nav*/ 1 && t_value !== (t_value = /*link*/ ctx[6].label + "")) set_data(t, t_value);
+			if (dirty & /*site_nav*/ 1 && t_value !== (t_value = /*link*/ ctx[5].label + "")) set_data(t, t_value);
 
-			if (dirty & /*site_nav*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[6].url)) {
+			if (dirty & /*site_nav*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[5].url)) {
 				attr(a, "href", a_href_value);
 			}
 
 			if (dirty & /*site_nav, window*/ 1) {
-				toggle_class(a, "active", /*link*/ ctx[6].url === window.location.pathname);
+				toggle_class(a, "active", /*link*/ ctx[5].url === window.location.pathname);
 			}
 		},
 		d(detaching) {
@@ -3160,7 +3160,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (126:4) {#if mobileNavOpen}
+// (125:4) {#if mobileNavOpen}
 function create_if_block$1(ctx) {
 	let nav;
 	let t;
@@ -3236,7 +3236,7 @@ function create_if_block$1(ctx) {
 			current = true;
 
 			if (!mounted) {
-				dispose = listen(button, "click", /*click_handler_1*/ ctx[4]);
+				dispose = listen(button, "click", /*click_handler_1*/ ctx[3]);
 				mounted = true;
 			}
 		},
@@ -3293,10 +3293,10 @@ function create_if_block$1(ctx) {
 	};
 }
 
-// (128:8) {#each site_nav as { link }}
+// (127:8) {#each site_nav as { link }}
 function create_each_block(ctx) {
 	let a;
-	let t_value = /*link*/ ctx[6].label + "";
+	let t_value = /*link*/ ctx[5].label + "";
 	let t;
 	let a_href_value;
 
@@ -3314,22 +3314,22 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "href", a_href_value = /*link*/ ctx[6].url);
-			toggle_class(a, "active", /*link*/ ctx[6].url === window.location.pathname);
+			attr(a, "href", a_href_value = /*link*/ ctx[5].url);
+			toggle_class(a, "active", /*link*/ ctx[5].url === window.location.pathname);
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
 			append_hydration(a, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*site_nav*/ 1 && t_value !== (t_value = /*link*/ ctx[6].label + "")) set_data(t, t_value);
+			if (dirty & /*site_nav*/ 1 && t_value !== (t_value = /*link*/ ctx[5].label + "")) set_data(t, t_value);
 
-			if (dirty & /*site_nav*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[6].url)) {
+			if (dirty & /*site_nav*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[5].url)) {
 				attr(a, "href", a_href_value);
 			}
 
 			if (dirty & /*site_nav, window*/ 1) {
-				toggle_class(a, "active", /*link*/ ctx[6].url === window.location.pathname);
+				toggle_class(a, "active", /*link*/ ctx[5].url === window.location.pathname);
 			}
 		},
 		d(detaching) {
@@ -3467,7 +3467,7 @@ function create_fragment$2(ctx) {
 			current = true;
 
 			if (!mounted) {
-				dispose = listen(button, "click", /*click_handler*/ ctx[3]);
+				dispose = listen(button, "click", /*click_handler*/ ctx[2]);
 				mounted = true;
 			}
 		},
@@ -3541,7 +3541,6 @@ function create_fragment$2(ctx) {
 }
 
 function instance$1($$self, $$props, $$invalidate) {
-	let { logo } = $$props;
 	let { site_nav } = $$props;
 	let mobileNavOpen = false;
 
@@ -3549,17 +3548,16 @@ function instance$1($$self, $$props, $$invalidate) {
 	const click_handler_1 = () => $$invalidate(1, mobileNavOpen = false);
 
 	$$self.$$set = $$props => {
-		if ('logo' in $$props) $$invalidate(2, logo = $$props.logo);
 		if ('site_nav' in $$props) $$invalidate(0, site_nav = $$props.site_nav);
 	};
 
-	return [site_nav, mobileNavOpen, logo, click_handler, click_handler_1];
+	return [site_nav, mobileNavOpen, click_handler, click_handler_1];
 }
 
 class Component$2 extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, instance$1, create_fragment$2, safe_not_equal, { logo: 2, site_nav: 0 });
+		init(this, options, instance$1, create_fragment$2, safe_not_equal, { site_nav: 0 });
 	}
 }
 
@@ -5644,23 +5642,8 @@ function create_fragment$9(ctx) {
 
 	component_1 = new Component$2({
 			props: {
-				logo: {
-					"image": {
-						"alt": "",
-						"src": "https://picsum.photos/600/400?blur=10",
-						"url": "https://picsum.photos/600/400?blur=10",
-						"size": null
-					},
-					"title": "Ea reprehenderit ipsum"
-				},
 				site_nav: [
 					{ "link": { "url": "/", "label": "Home" } },
-					{
-						"link": {
-							"url": "https://primosites.vercel.app/resume",
-							"label": "Resume"
-						}
-					},
 					{ "link": { "url": "/", "label": "Talks" } }
 				]
 			}
