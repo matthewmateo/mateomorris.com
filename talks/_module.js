@@ -4024,9 +4024,11 @@ function create_fragment$7(ctx) {
 				site_nav: [
 					{ "link": { "url": "/", "label": "Home" } },
 					{
-						"link": { "url": "/", "label": "Resume" }
+						"link": { "url": "/resume", "label": "Resume" }
 					},
-					{ "link": { "url": "/", "label": "Talks" } }
+					{
+						"link": { "url": "/talks", "label": "Talks" }
+					}
 				]
 			}
 		});
