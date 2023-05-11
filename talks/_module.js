@@ -4012,7 +4012,9 @@ function create_fragment$7(ctx) {
 			props: {
 				site_nav: [
 					{ "link": { "url": "/", "label": "Home" } },
-					{ "link": { "url": "/", "label": "Talks" } }
+					{
+						"link": { "url": "/talks", "label": "Talks" }
+					}
 				]
 			}
 		});
