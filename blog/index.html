@@ -1,82 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <title>Mateo Morris</title><!-- HEAD_svelte-zufwlb_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><link href="https://api.fontshare.com/v2/css?f[]=bespoke-serif@400,700,401,500,501,701&display=swap" rel="stylesheet"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
 
-<head>
-    <meta name="generator" content="Primo" />
-    <title>Mateo Morris</title><!-- HEAD_svelte-1kgz8cf_START -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link href="https://api.fontshare.com/v2/css?f[]=bespoke-serif@400,700,401,500,501,701&display=swap" rel="stylesheet">
-    <style>
-        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+html {
+  /* Colors */
+  --color-accent: #95B4BE;  
+  /* --font-primary: "Bespoke Serif", serif; */
+  --font-secondary: system-ui, serif;
 
-        html {
-            /* Colors */
-            --color-accent: #95B4BE;
-            --font-primary: "Bespoke Serif", serif;
-            --font-secondary: system-ui, serif;
+  /* Default property values */
+  --background: white;
+  --color: #222;
+  --padding: 4rem 2rem;
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+  --max-width: 900px;
+  --border-color: #C6CCD2; 
+  --transition-time: 0.1s;
+  --transition: var(--transition-time) color,
+    var(--transition-time) background-color,
+      var(--transition-time) border-color,
+        var(--transition-time) text-decoration-color,
+          var(--transition-time) box-shadow, var(--transtion-time) transform;
+}
 
-            /* Default property values */
-            --background: white;
-            --color: #222;
-            --padding: 4rem 2rem;
-            --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
-            --border-radius: 8px;
-            --max-width: 900px;
-            --border-color: #C6CCD2;
-            --transition-time: 0.1s;
-            --transition: var(--transition-time) color,
-                var(--transition-time) background-color,
-                var(--transition-time) border-color,
-                var(--transition-time) text-decoration-color,
-                var(--transition-time) box-shadow, var(--transtion-time) transform;
-        }
+#page {
+  color: var(--color);
+  line-height: 1.6;
+  font-size: 1rem;
+  background: var(--background);
+}
 
-        #page {
-            color: var(--color);
-            line-height: 1.6;
-            font-size: 1rem;
-            background: var(--background);
-        }
+.section .content {
+  padding: var(--padding);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
 
-        .section .content {
-            padding: var(--padding);
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
+.section .content > * {
+    max-width: 700px;
+  }
 
-        .section .content>* {
-            max-width: 700px;
-        }
+.section .content img {
+    width: 100%;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
 
-        .section .content img {
-            width: 100%;
-            margin: 2rem 0;
-            box-shadow: var(--box-shadow);
-            border-radius: var(--border-radius);
-        }
+.section .content p {
+    padding: 0.5rem 0;
+    line-height: 1.5;
+  }
 
-        .section .content p {
-            padding: 0.5rem 0;
-            line-height: 1.5;
-        }
+.section .content a {
 
-        .section .content a {}
+  }
 
-        .section .content h1 {
-            font-family: var(--font-primary);
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
+.section .content h1 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
 
-        .section .content h2 {
-            font-family: var(--font-primary);
-            font-size: 1.75rem;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
+.section .content h2 {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
 
-            /* &:after {
+   /* &:after {
       width: 50px;
       border-bottom: 3px solid var(--color);
       content: "";
@@ -84,46 +80,46 @@
       margin-bottom: 1.5rem;
       margin-top: 0.5rem;
     }*/
-        }
+  }
 
-        .section .content h3 {
-            font-family: var(--font-primary);
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-        }
+.section .content h3 {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
 
-        .section .content ul {
-            list-style: disc;
-            padding: 0.5rem 0;
-            padding-left: 1.25rem;
-        }
+.section .content ul {
+    list-style: disc;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
 
-        .section .content ol {
-            list-style: decimal;
-            padding: 0.5rem 0;
-            padding-left: 1.25rem;
-        }
+.section .content ol {
+    list-style: decimal;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
 
-        .section .content blockquote {
-            padding: 2rem;
-            box-shadow: var(--box-shadow);
-            border-radius: var(--border-radius);
-        }
+.section .content blockquote {
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
 
-        .section-container {
-            max-width: var(--max-width, 1200px);
-            margin: 0 auto;
-            padding: var(--padding);
-        }
+.section-container {
+  max-width: var(--max-width, 1200px);
+  margin: 0 auto;
+  padding: var(--padding); 
+}
 
-        .heading {
-            font-family: var(--font-primary);
-            font-size: 1.75rem;
-            line-height: 1;
-            font-weight: 500;
-
-            /*
+.heading {
+  font-family: var(--font-primary);
+  font-size: 1.75rem; 
+  line-height: 1;
+  font-weight: 500;
+  
+/*
   &:after {
     width: 50px;
     border-bottom: 3px solid var(--color);
@@ -133,169 +129,62 @@
     margin-bottom: 1.5rem;
   }
   */
-        }
+}
 
-        .link {
-            border-bottom: 1.5px solid #4C4E52;
-            transition: 0.1s border-color;
-        }
+.link {
+  border-bottom: 1.5px solid #4C4E52;
+  transition: 0.1s border-color;
+}
 
-        .link:hover {
-            border-color: transparent;
-        }
+.link:hover {
+    border-color: transparent; 
+  }
 
-        .button {
-            color: white;
-            background: var(--color-accent);
-            border-radius: 5px;
-            padding: 8px 20px;
-            transition: var(--transition);
-        }
+.button {
+  color: white;
+  background: var(--color-accent);
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: var(--transition);
+}
 
-        .button:hover {
-            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-        }
+.button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  }
 
-        .button.inverted {
-            background: transparent;
-            color: var(--color-accent);
-            border: 2px solid var(--color-accent);
-        }
-    </style><!-- HEAD_svelte-1kgz8cf_END -->
-    <style>
-        section.svelte-1xgioaj.svelte-1xgioaj {
-            position: relative
-        }
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+  }
+</style><!-- HEAD_svelte-zufwlb_END -->
+      <style>section.svelte-1xgioaj.svelte-1xgioaj{position:relative}.heading.svelte-1xgioaj.svelte-1xgioaj{font-size:1.75rem;margin-bottom:3.5rem}ul.items.svelte-1xgioaj.svelte-1xgioaj{display:grid;gap:4rem}li.svelte-1xgioaj.svelte-1xgioaj{display:grid;gap:3rem}li.svelte-1xgioaj.svelte-1xgioaj:not(:last-child){padding-bottom:4rem;border-bottom:1px solid var(--border-color)}li.svelte-1xgioaj>div .date.svelte-1xgioaj{font-size:0.75rem;font-weight:500}li.svelte-1xgioaj>div .title.svelte-1xgioaj{font-size:1.25rem;font-family:var(--font-primary);font-weight:500;margin-bottom:1rem}li.svelte-1xgioaj>div .description.svelte-1xgioaj{margin-bottom:1rem}li.svelte-1xgioaj>div .links.svelte-1xgioaj{display:flex}li.svelte-1xgioaj>div .links a.svelte-1xgioaj:not(:last-child){margin-right:1rem}li.svelte-1xgioaj img.svelte-1xgioaj{box-shadow:var(--box-shadow);border-radius:var(--border-radius)}button.show-more.svelte-1xgioaj.svelte-1xgioaj{position:absolute;bottom:0;left:0;width:100%;padding:6rem 0}button.show-more.svelte-1xgioaj.svelte-1xgioaj:before{content:'';background:linear-gradient(transparent, white);;;width:100%;height:200%;position:absolute;left:0;right:0;bottom:0;z-index:0;pointer-events:none}button.show-more.svelte-1xgioaj span.svelte-1xgioaj{display:inline-block;position:relative;z-index:1;border-radius:5rem;background:var(--color);padding:0.75rem 1.5rem;color:var(--background);transition:0.1s transform}button.show-more.svelte-1xgioaj:hover span.svelte-1xgioaj{transform:scale(1.05)}@media(min-width: 600px){li.svelte-1xgioaj.svelte-1xgioaj{grid-template-columns:3fr 1fr;gap:4rem}}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-2453e6a8"><section class="section-container svelte-1xgioaj"><h2 class="heading svelte-1xgioaj">Blog</h2>
+  <ul class="items svelte-1xgioaj"><li class="svelte-1xgioaj"><div><span class="date svelte-1xgioaj">November 7, '22</span>
+        <h3 class="title svelte-1xgioaj">Writing Melodies</h3>
+        <div class="description svelte-1xgioaj"><!-- HTML_TAG_START -->undefined<!-- HTML_TAG_END --></div>
+        <div class="links svelte-1xgioaj"><a class="link svelte-1xgioaj" href="/blog/writing-melodies">Read More</a> 
+        </div></div>
+      
+    </li></ul>
+  </section></div> 
 
-        .heading.svelte-1xgioaj.svelte-1xgioaj {
-            font-size: 1.75rem;
-            margin-bottom: 3.5rem
-        }
-
-        ul.items.svelte-1xgioaj.svelte-1xgioaj {
-            display: grid;
-            gap: 4rem
-        }
-
-        li.svelte-1xgioaj.svelte-1xgioaj {
-            display: grid;
-            gap: 3rem
-        }
-
-        li.svelte-1xgioaj.svelte-1xgioaj:not(:last-child) {
-            padding-bottom: 4rem;
-            border-bottom: 1px solid var(--border-color)
-        }
-
-        li.svelte-1xgioaj>div .date.svelte-1xgioaj {
-            font-size: 0.75rem;
-            font-weight: 500
-        }
-
-        li.svelte-1xgioaj>div .title.svelte-1xgioaj {
-            font-size: 1.25rem;
-            font-family: var(--font-primary);
-            font-weight: 500;
-            margin-bottom: 1rem
-        }
-
-        li.svelte-1xgioaj>div .description.svelte-1xgioaj {
-            margin-bottom: 1rem
-        }
-
-        li.svelte-1xgioaj>div .links.svelte-1xgioaj {
-            display: flex
-        }
-
-        li.svelte-1xgioaj>div .links a.svelte-1xgioaj:not(:last-child) {
-            margin-right: 1rem
-        }
-
-        li.svelte-1xgioaj img.svelte-1xgioaj {
-            box-shadow: var(--box-shadow);
-            border-radius: var(--border-radius)
-        }
-
-        button.show-more.svelte-1xgioaj.svelte-1xgioaj {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 6rem 0
-        }
-
-        button.show-more.svelte-1xgioaj.svelte-1xgioaj:before {
-            content: '';
-            background: linear-gradient(transparent, white);
-            ;
-            ;
-            width: 100%;
-            height: 200%;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 0;
-            pointer-events: none
-        }
-
-        button.show-more.svelte-1xgioaj span.svelte-1xgioaj {
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            border-radius: 5rem;
-            background: var(--color);
-            padding: 0.75rem 1.5rem;
-            color: var(--background);
-            transition: 0.1s transform
-        }
-
-        button.show-more.svelte-1xgioaj:hover span.svelte-1xgioaj {
-            transform: scale(1.05)
-        }
-
-        @media(min-width: 600px) {
-            li.svelte-1xgioaj.svelte-1xgioaj {
-                grid-template-columns: 3fr 1fr;
-                gap: 4rem
-            }
-        }
-    </style>
-</head>
-
-<body id="page">
-
-    <div class="section" id="section-2453e6a8-be5c-4054-b0c8-5245b17d55b1">
-        <div class="component">
-            <section class="section-container svelte-1xgioaj">
-                <h2 class="heading svelte-1xgioaj">Blog</h2>
-                <ul class="items svelte-1xgioaj">
-                    <li class="svelte-1xgioaj">
-                        <div><span class="date svelte-1xgioaj">November 7, '22</span>
-                            <h3 class="title svelte-1xgioaj">Writing Melodies</h3>
-                            <div class="description svelte-1xgioaj"><!-- HTML_TAG_START -->undefined<!-- HTML_TAG_END --></div>
-                            <div class="links svelte-1xgioaj"><a class="link svelte-1xgioaj" href="/blog/writing-melodies">Read More</a>
-                            </div>
-                        </div>
-
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </div>
-
-    <script type="module">
-        const path = window.location.pathname === '/' ? '' : window.location.pathname
-        const [{
-            default: App
-        }] = await Promise.all([
-            import(path + '/_module.js')
-        ]).catch(e => console.error(e))
-        new App({
-            target: document.querySelector('body'),
-            hydrate: true,
-        })
+      <script type="module">
+      import('/_symbols/013f3c91-07ff-4d04-815f-57725a5c875a.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-2453e6a8'),
+              hydrate: true,
+              props: {"heading":"Blog","items":[{"date":"November 7, '22","links":[{"link":{"url":"/blog/writing-melodies","label":"Read More"}}],"title":"Writing Melodies","thumbnail":{"alt":"","src":"","url":"","size":null},"description":""}],"show_all":true}
+            })
+          
+      })
+      .catch(e => console.error(e))
     </script>
-</body>
-
-</html>
+    </body>
+  </html>
+  
